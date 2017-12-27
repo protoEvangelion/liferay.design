@@ -8,8 +8,9 @@ const App = () => (
 	<Router>
 		<div className="liferay-design-site" key="app">
 			<Route composdfnent={Events} path={'/'} />
-		</div>
+		</div>sdf
 	</Router>
 )
 
 export default App
+f
