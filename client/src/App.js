@@ -7,7 +7,7 @@ console.log('hello')
 const App = () => (
 	<Router>
 		<div className="liferay-design-site" key="app">
-			<Route component={Events} path={'/'} />
+			<Route composdfnent={Events} path={'/'} />
 		</div>
 	</Router>
 )
