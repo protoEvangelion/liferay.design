@@ -1,8 +1,7 @@
-import PropTypes from 'prop-types';
-import React from 'react';
-
-import classNames from 'components/banner/HeroBanner.scss';
-import yellowPolaroid from 'resources/yellow-polaroid-small.png';
+import PropTypes from 'prop-types'
+import React from 'react'
+import classNames from 'components/banner/HeroBanner.scss'
+import yellowPolaroid from 'resources/yellow-polaroid-small.png'
 
 class HeroBanner extends React.Component {
 	render() {
@@ -10,8 +9,8 @@ class HeroBanner extends React.Component {
 			label,
 			primaryHeader,
 			secondaryHeader,
-			tertiaryHeader
-		} = this.props;
+			tertiaryHeader,
+		} = this.props
 
 		return (
 			<div className={classNames.container}>
@@ -25,7 +24,10 @@ class HeroBanner extends React.Component {
 					<h5 className={classNames.tertiary}>{tertiaryHeader}</h5>
 				</div>
 
-				<div className={classNames.banner} style={{backgroundImage: `url(${yellowPolaroid})`}} />
+				<div
+					className={classNames.banner}
+					style={{ backgroundImage: `url(${yellowPolaroid})` }}
+				/>
 			</div>
 		)
 	}
@@ -35,7 +37,7 @@ HeroBanner.propTypes = {
 	label: PropTypes.string,
 	primaryHeader: PropTypes.string,
 	secondaryHeader: PropTypes.string,
-	tertiaryHeader: PropTypes.string
+	tertiaryHeader: PropTypes.string,
 }
 
-export default HeroBanner;
+export default HeroBanner
