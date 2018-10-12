@@ -1,0 +1,61 @@
+@import '~theme/variables';
+@import '~theme/blueprints';
+
+a.card-link {
+	color: inherit;
+}
+
+.card.dark {
+	color: $white !important;
+	background-color: $darkGrey;
+	border-radius: 0;
+	&:hover {
+		background-color: $darkestGrey;
+	}
+	h2 {
+		color: $white !important;
+	}
+	p.text {
+		color: $lightestGrey !important;
+	}
+}
+
+.card {
+	text-align: center;
+	background-color: $white;
+	border-radius: $fontSizeSmall;
+	box-shadow: $elevation1;
+	padding: $spacingMedium $spacingSmall $spacingSmall;
+	min-height: 100%;
+	transition: all 0.4s;
+
+	&:hover {
+		background-color: $lightestBlue;
+		box-shadow: $elevation2;
+		transform: translateY(-($spacingXSmall / 2));
+		p.cta {
+			color: $primary;
+		}
+	}
+
+	.copy {
+		padding: 32px;
+	}
+
+	h2.title {
+		color: $darkGrey;
+		font-weight: $fontWeightBlack;
+		// margin-bottom: $fontSizeMedium;
+	}
+
+	p.text {
+		font-weight: $fontWeightRegular;
+		color: $lightGrey;
+		font-size: $fontSizeMedium;
+		margin: 0 0 $fontSizeXLarge;
+	}
+
+	p.cta {
+		color: lighten($grey, 16%);
+	}
+}

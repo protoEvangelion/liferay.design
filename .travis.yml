@@ -11,9 +11,7 @@ stages:
     if: branch = dev
 jobs:
   include:
-    - script: ./deploy/deploy-common.sh
     - stage: deploy-prod
       script: ./deploy/deploy-prod.sh
     - stage: deploy-dev
       script: ./deploy/deploy-dev.sh
-
