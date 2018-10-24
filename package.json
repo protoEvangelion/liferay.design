@@ -1,46 +1,50 @@
 {
-	"name": "liferay-design",
-	"description": "Liferay Design",
-	"version": "1.0.0",
-	"author": "Ryan Garant <ryan.garant@liferay.com>",
-	"dependencies": {
-		"gatsby-remark-images": "^1.5.67",
-		"lodash": "^4.17.10",
-		"react": "^16.4.2",
-		"react-dom": "^16.4.2",
-		"react-helmet": "^5.2.0",
-		"react-responsive": "^4.1.0",
-		"react-router-dom": "^4.3.1",
-		"react-sidebar": "^3.0.2",
-		"react-svg": "^5.0.22",
-		"semantic-ui-css": "^2.3.3",
-		"semantic-ui-react": "^0.82.2",
-		"wedeploy": "^4.5.0"
-	},
-	"devDependencies": {
-		"eslint": "^5.3.0",
-		"gatsby": "2.0.0-beta.100",
-		"gatsby-image": "^1.0.55",
-		"gatsby-plugin-catch-links": "^2.0.2-beta.11",
-		"gatsby-plugin-react-helmet": "3.0.0-beta.4",
-		"gatsby-plugin-resolve-src": "2.0.0-beta.1",
-		"gatsby-plugin-sass": "2.0.0-beta.10",
-		"gatsby-source-filesystem": "2.0.1-beta.10",
-		"gatsby-transformer-remark": "2.1.1-beta.6",
-		"node-sass": "^4.9.3",
-		"prettier": "^1.14.2"
-	},
-	"keywords": [
-		"gatsby"
-	],
-	"license": "MIT",
-	"scripts": {
-		"build": "gatsby build",
-		"dev": "gatsby develop --port 7777",
-		"format": "prettier --write 'src/**/*.js'"
-	},
-	"repository": {
-		"type": "git",
-		"url": "https://github.com/liferay-design/liferay.design"
-	}
+  "name": "liferay-design",
+  "description": "Liferay Design",
+  "version": "1.0.0",
+  "author": "Ryan Garant <ryan.garant@liferay.com>",
+  "dependencies": {
+    "gatsby-remark-images": "^2.0.1",
+    "lodash": "^4.17.10",
+    "react": "^16.4.2",
+    "react-dom": "^16.4.2",
+    "react-helmet": "^5.2.0",
+    "react-responsive": "^4.1.0",
+    "react-router-dom": "^4.3.1",
+    "react-sidebar": "^3.0.2",
+    "react-svg": "^5.0.22",
+    "semantic-ui-css": "^2.3.3",
+    "semantic-ui-react": "^0.82.2",
+    "wedeploy": "^4.5.0",
+    "snyk": "^1.104.2"
+  },
+  "devDependencies": {
+    "eslint": "^5.3.0",
+    "gatsby": "2.0.0-beta.100",
+    "gatsby-image": "^1.0.55",
+    "gatsby-plugin-catch-links": "^2.0.2-beta.11",
+    "gatsby-plugin-react-helmet": "3.0.0-beta.4",
+    "gatsby-plugin-resolve-src": "2.0.0-beta.1",
+    "gatsby-plugin-sass": "2.0.0-beta.10",
+    "gatsby-source-filesystem": "2.0.1-beta.10",
+    "gatsby-transformer-remark": "2.1.1-beta.6",
+    "node-sass": "^4.9.3",
+    "prettier": "^1.14.2"
+  },
+  "keywords": [
+    "gatsby"
+  ],
+  "license": "MIT",
+  "scripts": {
+    "build": "gatsby build",
+    "dev": "gatsby develop --port 7777",
+    "format": "prettier --write 'src/**/*.js'",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/liferay-design/liferay.design"
+  },
+  "snyk": true
 }
